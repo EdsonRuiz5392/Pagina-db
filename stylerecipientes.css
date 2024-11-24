@@ -1,0 +1,151 @@
+:root {
+  --color-1: #FDFFE2; /* Beige */
+  --color-2: #83B4FF; /* Azul */
+  --color-3: #5A72A0; /* Azul oscuro */
+  --color-4: #1A2130; /* Gris oscuro */
+  --color-5: #1A4D2E; /* Verde oscuro */
+  --color-6: #4F6F52; /* Verde medio */
+  --color-7: #E8DFCA; /* Beige claro */
+  --color-8: #F5EFE6; /* Beige cálido */
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* Tamaño de fuente base */
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.head-1 {
+  color: var(--color-4); /* Gris oscuro */
+  font-size: 3.2rem; /* Tamaño de fuente aumentado */
+  padding-bottom: 2rem; /* Espaciado reducido */
+}
+
+.head-2 {
+  padding: 2.5rem 0 1.5rem; /* Ajuste de espaciado */
+  color: var(--color-3); /* Azul */
+  font-size: 2.4rem; /* Tamaño de fuente ajustado */
+}
+
+.header {
+  background-color: var(--color-3); /* Azul */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alineación vertical */
+  padding: 2rem 0; /* Espaciado ajustado */
+}
+
+.contenedor {
+  background-color: var(--color-5); /* Verde oscuro */
+  width: 100%;
+  padding-bottom: 5rem; /* Espaciado ajustado */
+  margin: 3rem auto;
+  max-width: 120rem;
+}
+
+fieldset {
+  margin: 0 auto;
+  background-color: var(--color-6); /* Verde medio */
+  width: 100%;
+  border: none;
+  padding: 0 3rem; /* Ajuste de espaciado */
+  padding-bottom: 2rem; /* Espaciado reducido */
+}
+
+legend {
+  font-size: 1.8rem; /* Tamaño de fuente ajustado */
+  background-color: var(--color-1); /* Beige */
+  padding: 0.5rem 2rem; /* Ajuste de espaciado */
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--color-2); /* Azul */
+  font-weight: 600;
+}
+
+.input-data {
+  width: 100%;
+  height: 3rem; /* Ajuste de altura */
+  font-size: 1.6rem; /* Tamaño de fuente ajustado */
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Ajuste de diseño */
+  gap: 2rem; /* Espaciado entre elementos */
+}
+
+.label {
+  display: block;
+  color: var(--color-2); /* Azul */
+  font-size: 1.6rem;
+  margin-bottom: 1rem; /* Espaciado ajustado */
+}
+
+.contenedor-boton {
+  width: 100%;
+  margin: 3rem auto;
+  text-align: center; /* Alineación centrada */
+}
+
+.boton {
+  background-color: var(--color-2); /* Azul */
+  color: var(--color-1); /* Beige */
+  text-transform: uppercase;
+  padding: 1.5rem 3rem; /* Ajuste de espaciado */
+  border-radius: 2rem; /* Bordes más redondeados */
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: var(--color-3); /* Azul oscuro */
+  color: var(--color-2); /* Azul */
+}
+
+.temp {
+  width: 15%;
+}
+
+.datos-temp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: baseline; /* Alineación a la línea de base */
+}
+
+.resultado {
+  margin: 3rem auto;
+  background-color: var(--color-2); /* Azul */
+  width: 100%;
+  overflow: hidden;
+  max-width: 50rem;
+}
+
+.resultado img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.head-3 {
+  text-align: center;
+  color: var(--color-4); /* Gris oscuro */
+  font-size: 2rem; /* Tamaño de fuente ajustado */
+  padding: 1.5rem 0; /* Ajuste de espaciado */
+}

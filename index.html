@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniero Programador</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="css.png">
+    <style>
+        /* Estilo para los botones de habilidades */
+        .servicio-button {
+            display: inline-block;
+            color: #FFFFFF;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-decoration: underline;
+            padding: 0;
+            transition: color 0.3s ease;
+        }
+        
+        .servicio-button:hover {
+            color: #4F6F52; /* Cambiar color al pasar el cursor */
+        }
+
+        .servicio h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="titulo">Edson Omar Ruiz Verduzco <br> <span style="color: white;">Programador Junior</span></h1>
+</header>
+
+<div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="aboutme.html">Sobre Mi</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contact.html">Contacto</a>
+        <a href="mensajes.html">Mensajes</a>
+    </nav>
+</div>
+
+<section class="hero">
+    <div class="contenido-hero">
+        <h2 style="color: white;">Software Engineer - Fullstack Web</h2>
+        <div class="ubicacion">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+            </svg>  
+            <p style="color: white;">Guadalajara, CUCEI</p>
+        </div>
+        <a class="boton" href="#">Contactar</a>
+    </div>
+</section>
+
+<main class="contenedor sombra">
+    <h2>Mis Habilidades</h2>
+    <div class="servicios">
+
+        <!-- Botón para Manejo de HTML y CSS -->
+        <section class="servicio">
+            <button onclick="location.href='html-css-ejemplos.html'" class="servicio-button">
+                <h3>Manejo de HTML y CSS</h3>
+            </button>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-type-html" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+                    <path d="M2 21v-6" />
+                    <path d="M5 15v6" />
+                    <path d="M2 18h3" />
+                    <path d="M20 15v6h2" />
+                    <path d="M13 21v-6l2 3l2 -3v6" />
+                    <path d="M7.5 15h3" />
+                    <path d="M9 15v6" />
+                </svg>
+            </div>
+            <p>
+                <ul>
+                    <li>Estructuración de archivos</li>
+                    <li>Developer web</li>
+                    <li>Ejemplos Flex and Grid</li>
+                </ul>            
+            </p>
+        </section>
+
+        <!-- Botón para Manejo de CSS y Terminal -->
+        <section class="servicio">
+            <button onclick="location.href='formatoscss.html'" class="servicio-button">
+                <h3>Manejo de CSS and Design</h3>
+            </button>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+            </div>
+            <p>
+                <ul>
+                    <li>Diseño de navegación</li>
+                    <li>Barra de navegación</li>
+                    <li>Galería de imágenes</li>
+                </ul>            
+            </p>
+        </section>
+
+        <!-- Botón para Bases de Datos Básico -->
+        <section class="servicio">
+            <button onclick="location.href='java.html'" class="servicio-button">
+                <h3>JavaScript</h3>
+            </button>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M7.5 8h3v8l-2 -1" />
+                    <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+            </div>
+            <p>
+                <ul>
+                    <li>Tablas matemáticas</li>
+                    <li>Convertidor de Temperatura</li>
+                    <li>Gráficas</li>
+                </ul>            
+            </p>
+        </section>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <section>
+        <h2>Contacto</h2>
+        <form action="guardar_mensajes.php" method="POST" class="formulario-horizontal">
+            <fieldset>
+                <legend>Contáctanos llenando todos los campos</legend>
+                <div class="contenedor-campos-horizontal">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-text" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+        
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input class="input-text" type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    </div>
+        
+                    <div class="campo">
+                        <label for="correo">Correo</label>
+                        <input class="input-text" type="email" id="correo" name="correo" placeholder="Correo" required>
+                    </div>
+        
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="input-text" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                </div>
+                <div class="alinear-derecha">
+                    <input class="boton w-100" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+        
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Página web personal de Edson Omar Ruiz Verduzco</p>
+</footer>
+</body>
+</html>

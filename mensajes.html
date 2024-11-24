@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Mensajes Recibidos</h1>
+</header>
+
+<div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="aboutme.html">Sobre Mi</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contact.html">Contacto</a>
+        <a href="mensajes.html">Mensajes</a>
+    </nav>
+</div>
+
+<main class="contenedor sombra">
+    <h2>Tabla de Mensajes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Mensaje</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+                <?php include 'php/mostrar_mensajes.php'; ?>
+            
+            
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>Página web personal de Edson Omar Ruiz Verduzco</p>
+</footer>
+</body>
+</html>

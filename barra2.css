@@ -1,0 +1,61 @@
+:root {
+    --dropdown-bg-color: #ff5733; /* Orange Red */
+    --dropdown-hover-bg-color: #ff8d70; /* Light Orange Red */
+    --dropdown-text-color: white;
+    --dropdown-content-bg-color: #ffc299; /* Peach */
+    --dropdown-content-hover-bg-color: #ffd1b3; /* Light Peach */
+    --dropdown-content-text-color: black;
+}
+
+.dropbtn {
+    background-color: var(--dropdown-bg-color);
+    color: var(--dropdown-text-color);
+    padding: 14px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdown-content-bg-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+}
+
+.dropdown-content a {
+    color: var(--dropdown-content-text-color);
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.dropdown-content a:hover {
+    background-color: var(--dropdown-content-hover-bg-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--dropdown-hover-bg-color);
+    transform: translateY(-2px); /* Pequeño movimiento al pasar el ratón */
+}

@@ -1,0 +1,190 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores personalizados */
+:root {
+    --azulito: #5A72A0;
+    --navy: #1A2130;
+    --azul: #4F709C;
+    --verde: #4F6F52;
+    --verdeOscuro: #1A4D2E;
+    --beige: #E8DFCA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--beige);
+    color: var(--navy);
+}
+
+.main-page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-page h1 {
+    font-size: 2em;
+    color: var(--azulito);
+}
+
+.main-page span {
+    font-size: 1em;
+    color: var(--verde);
+}
+
+.container-cvu {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: var(--beige);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox1 {
+    flex: 1 1 30%;
+    padding: 20px;
+    background-color: var(--verdeOscuro);
+    color: var(--beige);
+    border-radius: 8px;
+}
+
+.photo-background {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid var(--verde);
+}
+
+.head-2, .head-3 {
+    text-align: center;
+    color: var(--beige);
+}
+
+.head-2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.head-3 {
+    font-size: 1.2em;
+    color: var(--azulito);
+    margin-top: 5px;
+}
+
+.account {
+    margin-top: 20px;
+}
+
+.img-account {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.h-account {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--beige);
+}
+
+.account-content {
+    margin-top: 10px;
+}
+
+.account-content div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon-account, .icon-account-cel {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(37%) saturate(1527%) hue-rotate(130deg) brightness(97%) contrast(90%);
+}
+
+.head-4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    color: var(--beige);
+}
+
+.grid-flex2 {
+    flex: 1 1 70%;
+    padding: 20px;
+}
+
+.head-labels, .head-labels2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--azul);
+    color: var(--azulito);
+    padding-bottom: 5px;
+}
+
+.p-margin {
+    margin: 10px 0;
+}
+
+.p-summary {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: var(--navy);
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.date, .location {
+    color: var(--azul);
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.functions {
+    font-weight: bold;
+    color: var(--verdeOscuro);
+}
+
+.color-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.color-list li {
+    margin-bottom: 5px;
+    color: var(--beige);
+}
+
+@media (max-width: 768px) {
+    .flexbox {
+        flex-direction: column;
+    }
+    .flexbox1, .grid-flex2 {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+}

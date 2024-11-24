@@ -1,0 +1,212 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-page h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.main-page span {
+    font-size: 1em;
+    color: #666;
+}
+
+.container-cvu {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox1 {
+    flex: 1 1 30%;
+    padding: 20px;
+}
+
+.photo-background {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.head-2, .head-3 {
+    text-align: center;
+}
+
+.head-2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.head-3 {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.account {
+    margin-top: 20px;
+}
+
+.img-account {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.h-account {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.account-content {
+    margin-top: 10px;
+}
+
+.account-content div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon-account, .icon-account-cel {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.head-4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+.head-number {
+    display: none;
+}
+
+.grid-flex2 {
+    flex: 1 1 70%;
+    padding: 20px;
+}
+
+.grid1, .grid3 {
+    margin-bottom: 10px;
+}
+
+.head-labels, .head-labels2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.p-margin {
+    margin: 10px 0;
+}
+
+.p-summary {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.cucei {
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.three-elements p {
+    margin-bottom: 5px;
+}
+
+.functions {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.grid-cucei .content {
+    margin-left: 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+.color-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.color-list li {
+    margin-bottom: 5px;
+}
+
+.normal {
+    display: inline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.plot-lan {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.plot-lan img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.margin {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .flexbox {
+        flex-direction: column;
+    }
+    .flexbox1, .grid-flex2 {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" type="image/x-icon" href="js.png">
+    <link rel="stylesheet" href="normalize2.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="stylerecipientes.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+    <div class="main-page">
+        <a href="index.html"><h1 class="a-main-page"> Edson Omar Ruiz Verduzco </h1></a>   
+    </div>
+    <div class="encabezado-java">
+
+        <h2 class="head-2">Prácticas de Java Script</h2>     
+    </div>
+    <main >
+        <section class="contenedo sombra">   
+
+
+        <header class="header">
+            <h1 class="head-1">Diseño de recipientes a presión</h1>
+            <img src="favicon.png" alt="Recipiente">
+        </header>
+        <!-- Datos de entrada -->
+        <h2 class="head-2">Datos de entrada</h2>
+        <div class="contenedor-2">
+            <fieldset>
+                <legend>Variables de entrada</legend>
+                <div class="datos">
+                    <div class="dato">
+                        <label for="">Presión interna:</label>
+                        <input placeholder="MPa" class="input-data" type="number" name="" id="Presion">
+                    </div>
+                    <div class="dato">
+                        <label for="">Diámetro:</label>
+                        <input placeholder="metros" class="input-data" type="number" name="" id="Diametro">
+                    </div>
+                    <div class="dato">
+                        <label for="">Longitud:</label>
+                        <input placeholder="metros" class="input-data" type="number" name="" id="Longitud">
+                    </div>
+                    <div class="dato">
+                        <label for="">Material:</label>
+                        <select class="input-data" id="Material">
+                            <option value="1">SA-283 gr D</option>   
+                            <option value="2">SA-662 gr B</option>   
+                            <option value="3">SA-537</option>   
+                            <option value="4">SA-515 gr 60</option>   
+                            <option value="5">SA-516 gr 70</option>  
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">Eficiencia de la junta:</label>
+                        <select class="input-data" name="" id="Eficiencia">
+                            <option value="1">Radiografiado completo (100%)</option>   
+                            <option value="2">Radiografiado parcial (85%)</option>   
+                            <option value="3">Sin Radiografiado (75%)</option>  
+     
+                        </select> 
+                    </div>
+                    <div class="dato">
+                        <label for="">Nivel:</label>
+                        <input placeholder="metros" class="input-data" type="number" name="" id="Nivel">
+                    </div>
+                    <div class="dato">
+                        <label for="">Densidad:</label>
+                        <input placeholder="kg/m³" class="input-data" type="number" name="" id="Densidad">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!-- Datos de salida -->
+        <h2 class="head-2">Datos de salida</h2>
+        <div class="contenedor-2">
+            <fieldset>
+                <legend>Variables de salida</legend>
+                <div class="datos">
+                    <div class="dato">
+                        <label for="">Espesor calculado de las tapas:</label>
+                        <input disabled class="input-data" type="number" name="" id="espesorcalculadotapas">
+                    </div>
+                    <div class="dato">
+                        <label for="">Espesor comercial del tapas:</label>
+                        <select class="input-data" id="espesortapascomercial">
+                            <option value="1">1/8 pulgada</option>   
+                            <option value="2">1/4 pulgada</option>   
+                            <option value="3">3/8 pulgada</option>   
+                            <option value="4">5/8 pulgada</option>   
+                            <option value="5">3/4 pulgada</option>   
+                            <option value="6">7/8 pulgada</option>   
+                            <option value="7">1 pulgada</option>   
+                            <option value="8">1 1/4 pulgada</option>   
+                            <option value="9">1 1/2 pulgada</option>   
+                            <option value="10">1 3/4 pulgada</option>   
+                            <option value="11">2 pulgadas</option>  
+ 
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">Espesor calculado del cuerpo:</label>
+                        <input disabled  class="input-data" type="number" name="" id="espesorcalculadocuerpo">
+                    </div>
+                    <div class="dato">
+                        <label for="">Espesor comercial del cuerpo:</label>
+                        <select class="input-data" id="espesorcuerpocomercial">
+                            <option value="1">1/8 pulgada</option>   
+                            <option value="2">1/4 pulgada</option>   
+                            <option value="3">3/8 pulgada</option>   
+                            <option value="4">5/8 pulgada</option>   
+                            <option value="5">3/4 pulgada</option>   
+                            <option value="6">7/8 pulgada</option>   
+                            <option value="7">1 pulgada</option>   
+                            <option value="8">1 1/4 pulgada</option>   
+                            <option value="9">1 1/2 pulgada</option>   
+                            <option value="10">1 3/4 pulgada</option>   
+                            <option value="11">2 pulgadas</option>    
+                        </select>
+                    </div>
+                    <div class="dato">
+                        <label for="">Peso del equipo vacío:</label>
+                        <input class="input-data" disabled type="number" id="pesovacio">
+                    </div>
+                    <div class="dato">
+                        <label for="">Peso del equipo en operación</label>
+                        <input class="input-data" disabled type="number" id="pesooperacion">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="contenedor-boton">
+            <a onclick="calcularRecipiente()" class="boton">Calcular</a>
+        </div>
+    </section>
+    <!-- Indice de masa corporal -->
+    <section class="contenedor sombra">
+        <div class="header">
+            <h1 class="head-1">
+                Calculo del indice de masa corporal
+            </h1>
+           
+        </div>
+                <!-- Datos de entrada -->
+                <h2 class="head-2">Datos de entrada</h2>
+                <div class="contenedor-2">
+                    <fieldset>
+                        <legend>Variables de entrada</legend>
+                        <div class="datos">
+                            <div class="dato">
+                                <label for="">Peso (kg):</label>
+                                <input placeholder="Peso (kg)" class="input-data" type="number" name="" id="peso">
+                            </div>
+                            <div class="dato">
+                                <label for="">Altura (m):</label>
+                                <input placeholder="Altura (m)" class="input-data" type="number" name="" id="altura">
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Datos de Salida -->
+                <h2 class="head-2">Datos de salida</h2>
+                <div class="contenedor-2">
+                    <fieldset>
+                        <legend>Índice de masa corporal</legend>
+                        <div class="datos">
+                            <div class="dato">
+                                <label for="">IMC (kg/m²):</label>
+                                <input disabled placeholder="IMC (kg/m²)" class="input-data" type="number" name="" id="imc">
+                            </div>
+                            <div class="dato">
+                                <label for="">Estado actual de acuerdo al IMC:</label>
+                                <input disabled placeholder="Estado acutal de acuerdo al IMC" class="input-data" type="text" name="" id="estadoimc">
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="contenedor-boton">
+                    <a onclick="imcFcn()" class="boton">Calcular</a>
+                </div>
+    </section>
+    <!-- Covertidor de temperaturas -->
+   <!-- Covertidor de temperaturas -->
+   <section class="contenedor sombra" style="background-color: #E8DFCA; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; width: 80%; max-width: 400px;">
+    <div class="header" style="background-color: #83B4FF; padding: 10px 0;">
+        <h1 class="head-1" style="color: #1A2130; font-size: 2.5rem;">Conversor de temperaturas</h1>
+    </div>
+    <!-- Datos de entrada -->
+    <h2 class="head-2" style="color: #5A72A0; font-size: 1.8rem; margin-bottom: 1rem;">Datos de entrada</h2>
+    <div class="contenedor-2">
+        <fieldset style="margin: 0 auto; background-color: #1A4D2E; width: 100%; border: none; padding: 0 3rem; padding-bottom: 2rem;">
+            <legend style="font-size: 1.8rem; background-color: #D5D5D5; padding: 0.5rem 2rem; text-align: right; text-transform: uppercase; color: #549c18; font-weight: 600;">
+                Variables de entrada
+            </legend>
+            <div class="grupo-input" style="margin-bottom: 20px;">
+                <input type="number" id="inputTemp" placeholder="Ingrese la temperatura" style="padding: 8px; border: 1px solid #1A4D2E; border-radius: 4px; background-color: #F5EFE6; margin-right: 10px; margin-bottom: 10px; width: 48%;">
+                <select id="inputEscala" style="padding: 8px; border: 1px solid #1A4D2E; border-radius: 4px; background-color: #F5EFE6; margin-right: 10px; margin-bottom: 10px; width: 48%;">
+                    <option value="celsius">°Celsius</option>
+                    <option value="fahrenheit">°Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="rankine">Rankine</option>
+                </select>
+            </div>
+            <div class="contenedor-boton" style="width: 100%; margin: 3rem auto; text-align: center;">
+                <button onclick="convertirTemperatura()" style="padding: 10px 20px; background-color: #1A2130; color: #fff; border: none; border-radius: 4px; cursor: pointer; width: 100%;">Convertir</button>
+            </div>
+            <div id="resultado" style="margin-top: 20px; color: #1A2130;"></div>
+        </fieldset>
+    </div>
+</section>
+<script src="script_convertidor.js"></script>
+
+    </main>
+
+    <script src="disenorecipientes.js"></script> 
+    <script src="imc.js"></script>  
+    <section>
+        <style>
+            :root {
+                --azulito: #5A72A0;
+                --navy: #1A2130;
+                --azul: #4F709C;
+                --verde: #4F6F52;
+                --verdeOscruo: #1A4D2E;
+                --beige: #E8DFCA;
+            }
+            
+            body {
+                background-color: #FDFFE2;
+            }
+            
+            .container {
+                width: 1200px;
+                margin: 25px auto;
+                background-color: var(--azulito);
+                padding: 25px 0;
+            }
+            
+            h1 {
+                text-align: center;
+                color: var(--navy);
+                background-color: var(--verde); 
+                margin: 0 25px;
+            }
+            
+            h2 {
+                text-align: center;
+                color: white;
+                background-color: #1A4D2E;
+                margin: 25px 25px 0px 25px;
+            }
+            
+            h3 {    
+                color: black;
+                text-transform: uppercase;
+                background-color: var(--beige);
+                padding: 2.5px;
+            }
+            
+            form {
+                margin: 0px 25px;
+            }
+            
+            legend {
+                padding: 25px 0px;
+                color: black;
+                text-transform: uppercase; 
+            }
+            
+            fieldset {
+                margin-top: 0px;
+            }
+            
+            label {
+                color: var(--navy);    
+            }
+            
+            .data-inputs {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+                gap: 3.5px;
+                margin: 0px;
+            }
+            
+            .lug, .sujetador {
+                display: grid;
+                grid-template-columns: 0.25fr 0.75fr;
+                margin-top: 1.5rem;
+            }
+            
+            .lug, .sujetador label {
+                text-align: right;
+                margin-right: 5px;
+            }
+            
+            .lug-datos {
+                color: var(--verdeOscruo);
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                margin-top: 1.5rem;
+                margin-left: 20rem;
+                margin-right: 5px;
+                row-gap: 0.85rem;
+                column-gap: 0.85rem;
+            }
+            
+            .lug-dato input {
+                width: 100%;
+                margin-top: 0.35rem;
+            }
+            
+            .btn-alinear {
+                text-align: right;
+                margin-top: 1.5rem;
+            }
+            
+            .btn {
+                background-color: var(--verde);
+                color: black;
+                text-transform: uppercase;
+                padding: .75rem 2.5rem;
+                border-color: var(--beige);
+                border-width: 2.5px;
+            }
+            
+            .btn:hover {
+                cursor: pointer;
+                background-color: var(--verdeOscruo);
+                color: white;
+                border-color: var(--beige);
+            }
+            
+            input[disabled] {
+                color: rgb(99, 19, 19);
+                background-color: var(--beige);
+                border-color: black;
+                font-weight: bold;
+                padding-left: 5.5px;
+            }
+        </style>
+    
+        <div class="container">
+            <h1>CARGA AXIAL - CARGAS PERMISIBLES</h1>  
+            <h2>DATOS</h2>  
+            <form>
+                <fieldset>
+                    <legend>Datos de entrada</legend>
+                    <div class="data-inputs">
+                        <h3>Datos de la orejeta</h3>
+                        <div class="lug">                
+                            <label for="">Material de la orejeta: </label>
+                            <select onchange="materialesplaca()" id="materiales_orejeta">
+                                <option selected value="0">Al 2024-T3 AMS 4037 / AMS QQ-A-250/4 Sheet 0.008-0.009 Thick S-Basis</option>
+                                <option value="1">Al 2024-T3 AMS 4462 / MIL-QQ-A-250/5 Clad Sheet 0.008-0.009 Thick A-Basis</option>
+                                <option value="2">Al 2027-T3511 AMS 4183 Profile,Extrusion - Area 0.750-1.500 Thick A-Basis</option>
+                                <option value="3">Al 2124-T851 AMS 4101 Plate - Area 1.000-1.500 Thick A-Basis</option>
+                                <option value="4">Al 7075-T6  AMS 4044 Plate,Bare - Area 0.250-0.499 Thick A-Basis</option>
+                                <option value="5">Al 7150-T76151 AMS 4306 Plate 1.001-1.5 Thick A-Basis</option>                       
+                            </select>
+                        </div>
+                        <div class="lug-datos">
+                            <div class="lug-dato">
+                                <label for="">$W =$</label>
+                                <input id="width" placeholder="in" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$a =$</label>
+                                <input id="a" placeholder="in" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$t_{1} =$</label>
+                                <input id="t1" placeholder="in" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$t_{2} =$</label>
+                                <input id="t2" placeholder="in" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$F_{tu} =$</label>
+                                <input disabled id="ftu" placeholder="psi" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$F_{ty} =$</label>
+                                <input disabled id="fty" placeholder="psi" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$F_{cy} =$</label>
+                                <input disabled id="fcy" placeholder="psi" type="number">
+                            </div>
+                        </div>
+                        <h3>Datos del sujetador</h3>
+                        <div class="sujetador">
+                            <label for="">Tipo de sujetador: </label>
+                            <select onchange="materialesujetador()" id="material_sujetador">
+                                <option selected value="0">B0205020AD5 - Al 2117-T4</option>
+                                <option value="1">B0205020AD6 - Al 2117-T4</option>
+                                <option value="2">B0205020AD7 - Al 2117-T4</option>
+                                <option value="3">B0205020AD8 - Al 2117-T4</option>
+                                <option value="4">B0205020E6  - Al 7050-T73</option>
+                                <option value="5">B0205020E7  - Al 7050-T73</option>
+                                <option value="6">B0205020E8  - Al 7050-T73</option>
+                            </select>   
+                        </div>   
+                        
+                        <div class="lug-datos">
+                            <div class="lug-dato">
+                                <label for="">$Ø_{barreno}=$</label>
+                                <input disabled id="dbarreno" placeholder="in" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$P_{cortante_{Permitido}} =$</label>
+                                <input disabled id="Ppermitido" placeholder="in" type="number">
+                            </div>     
+                            <div class="lug-dato">
+                                <label for="">$F_{tu} =$</label>
+                                <input disabled placeholder="psi" type="number" id="sftu">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$F_{ty} =$</label>
+                                <input disabled placeholder="psi" type="number" id="sfty">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$F_{cy} =$</label>
+                                <input disabled placeholder="psi" type="number" id="sfcy">
+                            </div>
+                        </div>
+                        <h3>Requerimientos de diseño</h3>
+                        <div class="lug-datos">
+                            <div class="lug-dato">
+                                <label for="">Factor de ajuste $(FA) =$</label>
+                                <input id="ff" placeholder="in" type="number">
+                            </div>
+                            <div class="lug-dato">
+                                <label for="">$MS_{mín} =$</label>
+                                <input disabled id="msmin" placeholder="in" type="number">
+                            </div>
+                        </div>
+                    </div>                
+                </fieldset>
+                <div class="btn-alinear">
+                    <input class="btn" onclick="calcular()" type="button" value="calcular"> 
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    </main>
+
+</body>
+</html>

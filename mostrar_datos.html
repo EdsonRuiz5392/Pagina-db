@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos Registrados</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="css.png">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <h1 class="titulo">Edson Omar Ruiz Verduzco <br> <span style="color: white;">Programador Junior</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="aboutme.html">Sobre Mi</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- Tabla de contactos -->
+    <main class="contenedor sombra">
+        <h2>Contactos Registrados</h2>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Mensaje</th>
+                        <th>Fecha de Envío</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Conexión a la base de datos
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $database = "formulario_contacto";
+
+                    $conn = new mysqli($servername, $username, $password, $database);
+
+                    // Verificar conexión
+                    if ($conn->connect_error) {
+                        die("Conexión fallida: " . $conn->connect_error);
+                    }
+
+                    // Obtener los datos
+                    $sql = "SELECT id, nombre, telefono, correo, mensaje, fecha_envio FROM contactos";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row['id'] . "</td>";
+                            echo "<td>" . $row['nombre'] . "</td>";
+                            echo "<td>" . $row['telefono'] . "</td>";
+                            echo "<td>" . $row['correo'] . "</td>";
+                            echo "<td>" . $row['mensaje'] . "</td>";
+                            echo "<td>" . $row['fecha_envio'] . "</td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='6'>No hay contactos registrados.</td></tr>";
+                    }
+
+                    $conn->close();
+                    ?>
+                </tbody>
+            </table>
+        </div>
+        <a class="boton" href="index.html">Volver al formulario</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Página web personal de Edson Omar Ruiz Verduzco</p>
+    </footer>
+</body>
+</html>

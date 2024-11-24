@@ -1,0 +1,99 @@
+/* Colores personalizados */
+:root {
+    --azulito: #5A72A0;
+    --navy: #1A2130;
+    --azul: #4F709C;
+    --verde: #4F6F52;
+    --verdeOscuro: #1A4D2E;
+    --beige: #E8DFCA;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--beige);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+.main-page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-title {
+    color: var(--verdeOscuro);
+    font-size: 2em;
+}
+
+.main-title span {
+    color: var(--navy);
+    font-size: 0.8em;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: var(--verdeOscuro);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--verdeOscuro);
+}
+
+.header h2 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.header img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-header {
+    color: var(--azulito);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.header h3 {
+    color: var(--navy)
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--azulito);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+}
+
+.info-item .icon img {
+    margin-right: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: var(--verde);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--verdeOscuro);
+}
